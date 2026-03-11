@@ -25,3 +25,9 @@ I used Virtual Machine Manager which can be installed by doing the following:
 - sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
 ---
+
+### Deploy and expose the service
+- Using the files in this repository, run:
+  - `kubectl apply -f deployment.yaml`
+  - `kubectl apply -f service.yaml`
+- Now run `minikube service nginx-service` to run the website
