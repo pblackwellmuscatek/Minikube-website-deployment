@@ -30,4 +30,10 @@ I used Virtual Machine Manager which can be installed by doing the following:
 - Using the files in this repository, run:
   - `kubectl apply -f deployment.yaml`
   - `kubectl apply -f service.yaml`
-- Now run `minikube service nginx-service` to run the website
+
+### Create configmap
+- The service will use the configmap to retrieve the index.html file and serve it:
+  - `kubectl create configmap nginx-html --from-file=index.html`
+  
+### Access the service
+- `minikube service nginx-service`
