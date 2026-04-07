@@ -36,4 +36,4 @@ I used Virtual Machine Manager which can be installed by doing the following:
   - `kubectl create configmap nginx-html --from-file=index.html`
   
 ### Access the service
-- `minikube service nginx-service`
+- `minikube service nginx-service` 
